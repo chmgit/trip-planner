@@ -2,17 +2,19 @@
   {{ errorMessage }}
 </p>
 
-<div class="trip-details" *ngIf="trip">
-  <img [src]="trip.image" [alt]="trip.name">
+<div class="trip-details" *ngIf="trip() as selectedTrip">
+  <img [src]="selectedTrip.image" [alt]="selectedTrip.name">
 
   <div class="content">
-    <h2>{{ trip.name }}</h2>
+    <h2>{{ selectedTrip.name }}</h2>
 
-    <p><strong>יעד:</strong> {{ trip.destination }}</p>
-    <p><strong>תאריך:</strong> {{ trip.date }}</p>
-    <p><strong>מחיר:</strong> {{ trip.price }} ₪</p>
-    <p><strong>תיאור:</strong> {{ trip.description }}</p>
+    <p><strong>יעד:</strong> {{ selectedTrip.destination }}</p>
+    <p><strong>תאריך:</strong> {{ selectedTrip.date }}</p>
+    <p><strong>מחיר:</strong> {{ selectedTrip.price }} ₪</p>
+    <p><strong>תיאור:</strong> {{ selectedTrip.description }}</p>
 
-    <button routerLink="/home/trips-all">חזרה לכל הטיולים</button>
+    <button routerLink="/home/trips-all">
+      חזרה לכל הטיולים
+    </button>
   </div>
 </div>
