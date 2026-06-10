@@ -4,17 +4,20 @@
   {{ errorMessage }}
 </p>
 
+<p>מספר טיולים: {{ trips().length }}</p>
+
 <div class="trips-list">
-  <div class="trip-card" *ngFor="let trip of trips">
-    <img [src]="trip.image" [alt]="trip.name">
+  <div class="trip-card" *ngFor="let trip of trips()">
+    <img class="trip-image" [src]="trip.image" [alt]="trip.name">
 
     <div class="trip-content">
       <h3>{{ trip.name }}</h3>
+
       <p><strong>יעד:</strong> {{ trip.destination }}</p>
       <p><strong>תאריך:</strong> {{ trip.date }}</p>
       <p><strong>מחיר:</strong> {{ trip.price }} ₪</p>
 
-      <a [routerLink]="['/home/trip', trip.id]">
+      <a class="details-link" [routerLink]="['/home/trip', trip.id]">
         צפייה בטיול
       </a>
     </div>

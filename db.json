@@ -23,7 +23,7 @@
       "date": "2026-07-01",
       "price": 120,
       "description": "טיול יפה בירושלים עם סיור בעיר העתיקה.",
-      "image": "https://via.placeholder.com/300x200?text=Jerusalem"
+      "image": "http://localhost:4200/images/03.jpg"
     },
     {
       "id": 2,
@@ -32,7 +32,7 @@
       "date": "2026-07-15",
       "price": 180,
       "description": "טיול נחמד בצפון עם נופים ומסלולים.",
-      "image": "https://via.placeholder.com/300x200?text=North"
+      "image": "http://localhost:4200/images/01.jpg"
     },
     {
       "id": 3,
@@ -41,7 +41,7 @@
       "date": "2026-08-05",
       "price": 150,
       "description": "יום כיף באזור ים המלח.",
-      "image": "https://via.placeholder.com/300x200?text=Dead+Sea"
+      "image": "http://localhost:4200/images/02.jpg"
     }
   ],
   "bookings": []
