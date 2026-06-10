@@ -1,1 +1,34 @@
-<p>login works!</p>
+<div class="login-container">
+  <h2>כניסה למערכת</h2>
+
+  <form (ngSubmit)="onSubmit()">
+    <div>
+      <label>שם משתמש</label>
+      <input
+        type="text"
+        name="username"
+        [(ngModel)]="username"
+      />
+    </div>
+
+    <div>
+      <label>סיסמה</label>
+      <input
+        type="password"
+        name="password"
+        [(ngModel)]="password"
+      />
+    </div>
+
+    <button type="submit">כניסה</button>
+  </form>
+
+  <p class="error" *ngIf="errorMessage">
+    {{ errorMessage }}
+  </p>
+
+  <p>
+    אין לך משתמש?
+    <a routerLink="/register">להרשמה</a>
+  </p>
+</div>
