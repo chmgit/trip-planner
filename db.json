@@ -1,0 +1,48 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "admin",
+      "password": "1234",
+      "fullName": "Admin User",
+      "isAdmin": true
+    },
+    {
+      "id": 2,
+      "name": "rivka",
+      "password": "1234",
+      "fullName": "Rivka Melki",
+      "isAdmin": false
+    }
+  ],
+  "trips": [
+    {
+      "id": 1,
+      "name": "טיול לירושלים",
+      "destination": "ירושלים",
+      "date": "2026-07-01",
+      "price": 120,
+      "description": "טיול יפה בירושלים עם סיור בעיר העתיקה.",
+      "image": "https://via.placeholder.com/300x200?text=Jerusalem"
+    },
+    {
+      "id": 2,
+      "name": "טיול לצפון",
+      "destination": "צפון",
+      "date": "2026-07-15",
+      "price": 180,
+      "description": "טיול נחמד בצפון עם נופים ומסלולים.",
+      "image": "https://via.placeholder.com/300x200?text=North"
+    },
+    {
+      "id": 3,
+      "name": "טיול לים המלח",
+      "destination": "ים המלח",
+      "date": "2026-08-05",
+      "price": 150,
+      "description": "יום כיף באזור ים המלח.",
+      "image": "https://via.placeholder.com/300x200?text=Dead+Sea"
+    }
+  ],
+  "bookings": []
+}
