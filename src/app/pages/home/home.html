@@ -1,1 +1,15 @@
-<p>home works!</p>
+<div class="home-container">
+  <header class="header">
+    <h2>שלום {{ currentUser?.fullName }}</h2>
+
+    <nav>
+      <button routerLink="/home/trips-all">All Trips</button>
+      <button routerLink="/home/trips-my">My Trips</button>
+      <button (click)="logout()">Logout</button>
+    </nav>
+  </header>
+
+  <main>
+    <router-outlet></router-outlet>
+  </main>
+</div>

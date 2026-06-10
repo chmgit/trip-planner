@@ -1,0 +1,28 @@
+.home-container {
+  font-family: Arial, sans-serif;
+  direction: rtl;
+}
+
+.header {
+  padding: 20px;
+  background-color: #f3f3f3;
+  border-bottom: 1px solid #ddd;
+}
+
+.header h2 {
+  margin: 0 0 15px 0;
+}
+
+nav {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  padding: 8px 14px;
+  cursor: pointer;
+}
+
+main {
+  padding: 20px;
+}
