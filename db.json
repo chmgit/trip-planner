@@ -1,14 +1,14 @@
 {
   "users": [
     {
-      "id": 1,
+      "id": "1",
       "name": "admin",
       "password": "1234",
       "fullName": "Admin User",
       "isAdmin": true
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "rivka",
       "password": "1234",
       "fullName": "Rivka Melki",
@@ -17,7 +17,7 @@
   ],
   "trips": [
     {
-      "id": 1,
+      "id": "1",
       "name": "טיול לירושלים",
       "destination": "ירושלים",
       "date": "2026-07-01",
@@ -26,7 +26,7 @@
       "image": "http://localhost:4200/images/03.jpg"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "טיול לצפון",
       "destination": "צפון",
       "date": "2026-07-15",
@@ -35,7 +35,7 @@
       "image": "http://localhost:4200/images/01.jpg"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "טיול לים המלח",
       "destination": "ים המלח",
       "date": "2026-08-05",
@@ -44,5 +44,103 @@
       "image": "http://localhost:4200/images/02.jpg"
     }
   ],
-  "bookings": []
+  "bookings": [
+    {
+      "userId": 2,
+      "tripId": 1,
+      "numberOfPeople": 2,
+      "id": "xd9PMaefyjU"
+    },
+    {
+      "userId": 2,
+      "tripId": 1,
+      "numberOfPeople": 2,
+      "id": "aIi80dY7GEI"
+    },
+    {
+      "userId": 2,
+      "tripId": 1,
+      "numberOfPeople": 2,
+      "id": "sQw0sKbui4s"
+    },
+    {
+      "userId": 2,
+      "tripId": 1,
+      "numberOfPeople": 2,
+      "id": "el7RFZR5WYs"
+    },
+    {
+      "userId": 2,
+      "tripId": 1,
+      "numberOfPeople": 2,
+      "id": "gIsbk84cxYs"
+    },
+    {
+      "userId": 2,
+      "tripId": 1,
+      "numberOfPeople": 2,
+      "id": "Wv7hztXIGdE"
+    },
+    {
+      "userId": 2,
+      "tripId": 1,
+      "numberOfPeople": 2,
+      "id": "7fybt45Y0eo"
+    },
+    {
+      "userId": 2,
+      "tripId": 1,
+      "numberOfPeople": 2,
+      "id": "Il7RxXRsHCI"
+    },
+    {
+      "userId": 2,
+      "tripId": 1,
+      "numberOfPeople": 2,
+      "id": "wH7mwN6KNlI"
+    },
+    {
+      "userId": 2,
+      "tripId": 1,
+      "numberOfPeople": 2,
+      "id": "NRUlF9FHx-w"
+    },
+    {
+      "userId": 1,
+      "tripId": 1,
+      "numberOfPeople": 6,
+      "id": "odkOWjtT3CE"
+    },
+    {
+      "userId": 1,
+      "tripId": 1,
+      "numberOfPeople": 6,
+      "id": "vx3jgaCIFmY"
+    },
+    {
+      "userId": 2,
+      "tripId": 2,
+      "numberOfPeople": 3,
+      "id": "6TXcsHBYk64"
+    },
+    {
+      "userId": 2,
+      "tripId": 2,
+      "numberOfPeople": 3,
+      "id": "nOXpAZ1eH_Y"
+    },
+    {
+      "userId": 1,
+      "tripId": 3,
+      "numberOfPeople": 4,
+      "id": "m-TFBc03_yI"
+    },
+    {
+      "userId": 1,
+      "tripId": 3,
+      "numberOfPeople": 4,
+      "id": "iP_2j2CuF4I"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }

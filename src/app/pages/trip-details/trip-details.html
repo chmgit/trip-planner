@@ -2,6 +2,10 @@
   {{ errorMessage }}
 </p>
 
+<p class="success" *ngIf="successMessage">
+  {{ successMessage }}
+</p>
+
 <div class="trip-details" *ngIf="trip() as selectedTrip">
   <img [src]="selectedTrip.image" [alt]="selectedTrip.name">
 
@@ -12,6 +16,25 @@
     <p><strong>תאריך:</strong> {{ selectedTrip.date }}</p>
     <p><strong>מחיר:</strong> {{ selectedTrip.price }} ₪</p>
     <p><strong>תיאור:</strong> {{ selectedTrip.description }}</p>
+
+    <hr>
+
+    <div class="booking-box" *ngIf="!isAlreadyBooked">
+      <h3>הרשמה לטיול</h3>
+
+      <label>כמות אנשים:</label>
+      <input type="number" min="1" name="numberOfPeople" [(ngModel)]="numberOfPeople">
+
+      <button (click)="registerToTrip()">
+        הירשם
+      </button>
+    </div>
+
+    <p class="already-booked" *ngIf="isAlreadyBooked">
+      משתמש רשום כבר לטיול
+    </p>
+
+    <br>
 
     <button routerLink="/home/trips-all">
       חזרה לכל הטיולים

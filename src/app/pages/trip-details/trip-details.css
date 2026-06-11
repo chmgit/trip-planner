@@ -27,3 +27,27 @@ button {
 .error {
   color: red;
 }
+
+.booking-box {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+}
+
+.booking-box input {
+  display: block;
+  width: 120px;
+  padding: 8px;
+  margin: 8px 0 12px 0;
+}
+
+.success {
+  color: green;
+  font-weight: bold;
+}
+
+.already-booked {
+  color: #b36b00;
+  font-weight: bold;
+}
